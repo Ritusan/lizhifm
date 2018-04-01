@@ -1,0 +1,328 @@
+/*
+* @Author: dream
+* @Date:   2018-03-06 18:20:24
+* @Last Modified by:   dream
+* @Last Modified time: 2018-03-28 20:45:15
+*/
+
+/* 初始化 */
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+    margin: 0;
+    padding: 0;
+}
+fieldset,img,input,button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+ul,ol {
+    list-style: none;
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun","宋体";
+}
+select,input,textarea {
+    font-size: 15px;
+    margin: 0;
+}
+textarea {
+    resize: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+}
+body {
+    font: 12px/150% Arial, Verdana,"\5b8b\4f53";
+    color: #666;
+    background: #fff;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+a {
+    color: #999;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff0036;
+}
+h1,h2,h3,h4,h5,h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+s,i,em {
+    font-style: normal;
+    text-decoration: none;
+}
+.col-red {
+    color: #ff0036;
+}
+
+/* 公共类 */
+.w {
+    width: 1210px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.al {
+    text-align: left;
+}
+.ac {
+    text-align: center;
+}
+.ar {
+    text-align: right;
+}
+.hide {
+    display: none;
+}
+
+/* header start */
+.header {
+    background: url('http://www.lizhi.fm/assets/images/newheaderBG.png') repeat-x;
+    height: 80px;
+    padding-bottom: 9px;
+    margin-bottom: 15px;
+}
+.content {
+    width: 993px;
+    margin: 0 auto;
+    padding: 15px 0;
+    position: relative;
+}
+.header .topNav {
+    padding: 0 0 0 30px;
+    font-family: "Microsoft YaHei";
+}
+.header .topNav li {
+    font-size: 16px;
+    display: inline-block;
+}
+.header .topNav a {
+    margin: -14px 0;
+    color: #867f6f;
+    height: 83px;
+    line-height: 83px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.header .header_r a {
+    display: inline-block;
+    width: 146px;
+    height: 44px;
+    margin-top: 5px;
+    line-height: 44px;
+    border-radius: 4px;
+    background-color: #fecb2f;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* header end */
+
+/* frame start */
+.frame {
+    border-radius: 6px;
+    border: 1px solid #e8e3d3;
+    box-shadow: 0 0 5px rgba(198, 198, 198, 0.4);
+    width: 953px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f8f2;
+    min-height: 500px;
+}
+.main_box {
+    width: 660px;
+    padding-right: 21px;
+    border-right: 1px solid #e8e3d3;
+}
+.topicBox {
+    position: relative;
+    width: 660px;
+    height: 252px;
+    padding-bottom: 45px;
+    margin: 0 auto;
+}
+.carousel_wrapper {
+    display: block;
+    text-align: left;
+    float: none;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: auto;
+    width: 660px;
+    height: 252px;
+    margin: 0;
+    overflow: hidden;
+}
+.topicBox .prev {
+    background: url('http://www.lizhi.fm/images/carousel.png') no-repeat;
+    width: 44px;
+    height: 69px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    float: left;
+    display: inline-block;
+}
+.topicBox .next {
+    background: url('http://www.lizhi.fm/images/carousel.png') no-repeat;
+    background-position: 0 -70px;
+    right: 0;
+    width: 44px;
+    height: 69px;
+    top: 90px;
+    float: right;
+    display: inline-block;
+    position: absolute;
+}
+.topicPager {
+    display: inline-block;
+    text-align: center;
+    width: 660px;
+    margin-top: 6px;
+}
+.topicPager a {
+    background: url('http://www.lizhi.fm/images/carousel.png') no-repeat 0 -140px;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 50px;
+    margin-right: 7px;
+}
+/* frame end */
+
+/* footer start */
+.footer {
+    margin-top: 45px;
+    border-top: 1px solid #b8b5a9;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+.footer .content {
+    width: 993px;
+    margin: 0 auto;
+    padding: 15px 0;
+    position: relative;
+    display: block;
+}
+.footer .attentionUs {
+    display: inline-block;
+    padding: 24px 10px 24px 0;
+    font-size: 14px;
+    color: #867f6f;
+}
+.footer .attentionUs span {
+    margin-right: 17px;
+}
+.footer .attentionUs a {
+    background: url('http://www.lizhi.fm/images/footer.png?v=0.11') no-repeat;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer .attentionUs a.sina_weibo_ico {
+    background-position: -38px 0;
+}
+.footer .attentionUs a.douban_ico {
+    background-position: -114px 0;    
+}
+.footer .attentionUs a.baidu_ico {
+    background-position: -188px 0;
+}
+.footer .attentionUs a:hover {
+
+}
+.footer .weixin_ico,
+.sina_weibo_ico,
+.douban_ico,
+.baidu_ico {
+
+}
+.footer .site_hot_promo_link {
+
+}
+.footer .site_hot_promo_link a {
+
+}
+.footer .site_friendly_link {
+
+}
+.footer .site_friendly_link a {
+
+}
+.footer .site_friendly_link .site_friendly_link_inner {
+
+}
+.footer .site_friendly_link_inner span {
+
+}
+.footer .site_friendly_link_inner a {
+
+}
+.footer .left {
+
+}
+.footer .left a {
+
+}
+.footer .right {
+
+}
+.footer .right a {
+    
+}
+/* footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
